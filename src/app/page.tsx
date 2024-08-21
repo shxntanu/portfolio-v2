@@ -172,7 +172,7 @@ export default function Page() {
                                 </h2>
                                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                     I have a knack for competing in hackathons.
-                                    It was eye-opening to see the endless
+                                    Its always eye-opening to see the endless
                                     possibilities brought to life by a group of
                                     motivated and passionate individuals.
                                 </p>
