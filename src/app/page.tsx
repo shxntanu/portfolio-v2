@@ -216,7 +216,7 @@ export default function Page() {
                                     href={DATA.contact.social.Email.url}
                                     className="text-blue-500 hover:underline"
                                 >
-                                    with a direct question on mail
+                                    with a direct question
                                 </Link>{" "}
                                 and I&apos;ll respond whenever I can.
                             </p>
