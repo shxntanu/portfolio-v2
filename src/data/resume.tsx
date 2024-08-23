@@ -286,7 +286,7 @@ export const DATA = {
             dates: "April 7 - 8th, 2024",
             location: "Barclays Pune Campus, Pune",
             description:
-                "Developed a robust email classification system capable of classifying and routing emails in an organizational heirarchy tree with scale.",
+                "Developed a robust email classification system capable of classifying and routing emails in an organizational heirarchy tree with scale. \n\n Bagged 3rd Place overall and Winner from the Barclays Pune Campus from a total of 4500+ participants and 1200+ teams. Also got the opportunity to present the solution in front of the global leadership of Barclays including the CIO and CTO of Barclays International.",
             image: "/barclays.png",
             links: [],
         },
