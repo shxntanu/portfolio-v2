@@ -19,6 +19,8 @@ export const DATA = {
         "Angular",
         "Node.js",
         "Python",
+        "Streamlit",
+        "GenAI",
         "Go",
         "Postgres",
         "Docker",
@@ -180,6 +182,30 @@ export const DATA = {
             video: "",
         },
         {
+            title: "IDP",
+            href: "https://idp-sap.vercel.app",
+            dates: "Oct. 2023 - Sept. 2024",
+            active: true,
+            description:
+                "Built an end-to-end, AI-based Intelligent Document Processing (IDP) SaaS product that automates the process of Invoice management targeted at the B2B industry.",
+            technologies: [
+                "NextJS",
+                "Redux",
+                "Reactflow",
+                "Iron Session",
+                "Turborepo",
+            ],
+            links: [
+                {
+                    type: "Website",
+                    href: "https://idp-sap.vercel.app",
+                    icon: <Icons.globe className="size-3" />,
+                },
+            ],
+            image: "/idp.png",
+            video: "",
+        },
+        {
             title: "Email Classifier",
             href: "https://github.com/shxntanu/email-classifier",
             dates: "April 2024",
@@ -228,6 +254,30 @@ export const DATA = {
             video: "",
         },
         {
+            title: "Compliance Helper",
+            href: "https://github.com/shxntanu/compliance-helper",
+            dates: "September 2024",
+            active: true,
+            description:
+                "📄 Parse and understand industry compliance documents faster.",
+            technologies: [
+                "Python",
+                "Streamlit",
+                "Regex",
+                "Qwen2",
+                "Google Gemini",
+            ],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/compliance-helper",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/compliance-helper.png",
+            video: "",
+        },
+        {
             title: "hyperbloom",
             href: "https://github.com/shxntanu/hyperbloom",
             dates: "August 2024",
@@ -242,6 +292,23 @@ export const DATA = {
                 },
             ],
             image: "/hyperbloom.png",
+            video: "",
+        },
+        {
+            title: "tinySQL",
+            href: "https://github.com/shxntanu/tinysql",
+            dates: "August 2024 - Present",
+            active: true,
+            description: "Writing a SQL Database from scratch in C.",
+            technologies: ["C", "SQLite", "B+ Trees"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/shxntanu/tinysql",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/tinysql.png",
             video: "",
         },
         {
@@ -288,6 +355,24 @@ export const DATA = {
             description:
                 "Developed a robust email classification system capable of classifying and routing emails in an organizational heirarchy tree with scale. \n\n Bagged 🥉 3rd Place overall and Winner from the Barclays Pune Campus from a total of 4500+ participants and 1200+ teams. Also got the opportunity to present the solution in front of the global leadership of Barclays including the CIO and CTO of Barclays International.",
             image: "/barclays.png",
+            links: [],
+        },
+        {
+            title: "BMC Hackathon",
+            dates: "September 28 - 30th, 2024",
+            location: "PICT, Pune",
+            description:
+                "Creating compliance content is a very time consuming process due to the sheer length of the compliance documents and standards. We built a project that aimed at reducing the amount of manual work involved and makes creating audit and remediation scripts faster and easier.",
+            image: "/bmc.png",
+            links: [],
+        },
+        {
+            title: "Smart India Hackathon 2024",
+            dates: "August 2024",
+            location: "",
+            description:
+                "Architected a comprehensive interview platform for DRDO to conduct interviews for various roles. The platform included features like live coding, video conferencing, and a robust backend for managing the interviews.",
+            image: "/sih.png",
             links: [],
         },
         {
