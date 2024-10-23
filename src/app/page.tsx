@@ -7,6 +7,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
+import ShineBorder from "@/components/ui/shine-border";
+import Image from "next/image";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -42,39 +44,86 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section id="about">
-                <BlurFade delay={BLUR_FADE_DELAY * 3}>
-                    <h2 className="text-xl font-bold">About</h2>
-                </BlurFade>
-                <BlurFade delay={BLUR_FADE_DELAY * 4}>
-                    <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-                        {DATA.summary}
-                    </Markdown>
-                </BlurFade>
-            </section>
-            <section id="work">
-                <div className="flex min-h-0 flex-col gap-y-3">
-                    <BlurFade delay={BLUR_FADE_DELAY * 5}>
-                        <h2 className="text-xl font-bold">Work Experience</h2>
-                    </BlurFade>
-                    {DATA.work.map((work, id) => (
-                        <BlurFade
-                            key={work.company}
-                            delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-                        >
-                            <ResumeCard
-                                key={work.company}
-                                logoUrl={work.logoUrl}
-                                altText={work.company}
-                                title={work.company}
-                                subtitle={work.title}
-                                href={work.href}
-                                badges={work.badges}
-                                period={`${work.start} - ${work.end ?? "Present"}`}
-                                description={work.description}
+            <section id="about" className="relative">
+                <div className="container mx-auto px-0">
+                    <div className="flex flex-col md:flex-row items-start">
+                        <div className="w-full z-10">
+                            <BlurFade delay={BLUR_FADE_DELAY * 3}>
+                                <h2 className="text-xl font-bold mb-2">
+                                    About
+                                </h2>
+                            </BlurFade>
+                            <BlurFade delay={BLUR_FADE_DELAY * 4}>
+                                <ShineBorder
+                                    color={[
+                                        "#640D5F",
+                                        "#D91656",
+                                        "#EE66A6",
+                                        "#FFEB55",
+                                    ]}
+                                    className="rounded-xl shadow-xl p-5"
+                                >
+                                    <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground bg-white dark:prose-invert">
+                                        {DATA.summary}
+                                    </Markdown>
+                                </ShineBorder>
+                            </BlurFade>
+                        </div>
+                        <div className="w-full md:w-1/2 absolute -right-48 -top-10 -z-10">
+                            <Image
+                                src="groovy-doodle.svg"
+                                alt="Decorative illustration"
+                                width={400}
+                                height={400}
+                                className="object-cover rounded-lg"
                             />
-                        </BlurFade>
-                    ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work" className="relative">
+                <div className="container mx-auto px-0">
+                    <div className="flex flex-col md:flex-row items-start">
+                        <div className="w-full md:w-1/2 absolute right-[500px] top-10 -z-10">
+                            <Image
+                                src="messy-doodle.svg"
+                                alt="Decorative illustration"
+                                width={400}
+                                height={400}
+                                className="object-cover rounded-lg"
+                            />
+                        </div>
+                        <div className="w-full z-10">
+                            <BlurFade delay={BLUR_FADE_DELAY * 5}>
+                                <h2 className="text-xl font-bold mb-2">
+                                    Work Experience
+                                </h2>
+                            </BlurFade>
+                            <ShineBorder
+                                color={["#536493", "#88C273", "#D4BDAC"]}
+                                className="rounded-xl shadow-xl p-5"
+                            >
+                                {DATA.work.map((work, id) => (
+                                    <BlurFade
+                                        key={work.company}
+                                        delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+                                    >
+                                        <ResumeCard
+                                            key={work.company}
+                                            logoUrl={work.logoUrl}
+                                            altText={work.company}
+                                            title={work.company}
+                                            subtitle={work.title}
+                                            href={work.href}
+                                            badges={work.badges}
+                                            period={`${work.start} - ${work.end ?? "Present"}`}
+                                            description={work.description}
+                                        />
+                                    </BlurFade>
+                                ))}
+                            </ShineBorder>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="education">
