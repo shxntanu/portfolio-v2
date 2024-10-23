@@ -81,49 +81,29 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section id="work" className="relative">
-                <div className="container mx-auto px-0">
-                    <div className="flex flex-col md:flex-row items-start">
-                        <div className="w-full md:w-1/2 absolute right-[500px] top-10 -z-10">
-                            <Image
-                                src="messy-doodle.svg"
-                                alt="Decorative illustration"
-                                width={400}
-                                height={400}
-                                className="object-cover rounded-lg"
+            <section id="work">
+                <div className="flex min-h-0 flex-col gap-y-3">
+                    <BlurFade delay={BLUR_FADE_DELAY * 5}>
+                        <h2 className="text-xl font-bold">Work Experience</h2>
+                    </BlurFade>
+                    {DATA.work.map((work, id) => (
+                        <BlurFade
+                            key={work.company}
+                            delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+                        >
+                            <ResumeCard
+                                key={work.company}
+                                logoUrl={work.logoUrl}
+                                altText={work.company}
+                                title={work.company}
+                                subtitle={work.title}
+                                href={work.href}
+                                badges={work.badges}
+                                period={`${work.start} - ${work.end ?? "Present"}`}
+                                description={work.description}
                             />
-                        </div>
-                        <div className="w-full z-10">
-                            <BlurFade delay={BLUR_FADE_DELAY * 5}>
-                                <h2 className="text-xl font-bold mb-2">
-                                    Work Experience
-                                </h2>
-                            </BlurFade>
-                            <ShineBorder
-                                color={["#536493", "#88C273", "#D4BDAC"]}
-                                className="rounded-xl shadow-xl p-5"
-                            >
-                                {DATA.work.map((work, id) => (
-                                    <BlurFade
-                                        key={work.company}
-                                        delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-                                    >
-                                        <ResumeCard
-                                            key={work.company}
-                                            logoUrl={work.logoUrl}
-                                            altText={work.company}
-                                            title={work.company}
-                                            subtitle={work.title}
-                                            href={work.href}
-                                            badges={work.badges}
-                                            period={`${work.start} - ${work.end ?? "Present"}`}
-                                            description={work.description}
-                                        />
-                                    </BlurFade>
-                                ))}
-                            </ShineBorder>
-                        </div>
-                    </div>
+                        </BlurFade>
+                    ))}
                 </div>
             </section>
             <section id="education">
