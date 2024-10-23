@@ -48,7 +48,7 @@ export default function Page() {
             <section id="about" className="relative">
                 <div className="container mx-auto px-0">
                     <div className="flex flex-col md:flex-row items-start">
-                        <div className="w-full md:w-1/2 absolute right-[510px] top-[200px] z-50">
+                        <div className="w-full md:w-1/2 absolute right-[510px] top-[200px] z-50 sm:visibility: hidden">
                             <Image
                                 src="coffee-doodle.svg"
                                 alt="Decorative illustration"
@@ -79,7 +79,7 @@ export default function Page() {
                                 </ShineBorder>
                             </BlurFade>
                         </div>
-                        <div className="w-full md:w-1/2 absolute -right-48 -top-10 -z-10">
+                        <div className="w-full md:w-1/2 absolute -right-48 -top-10 -z-10 sm:visibility: hidden">
                             <Image
                                 src="groovy-doodle.svg"
                                 alt="Decorative illustration"
