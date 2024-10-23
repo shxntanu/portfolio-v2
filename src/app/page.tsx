@@ -5,6 +5,7 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import IconCloud from "@/components/ui/icon-cloud";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import ShineBorder from "@/components/ui/shine-border";
@@ -47,6 +48,15 @@ export default function Page() {
             <section id="about" className="relative">
                 <div className="container mx-auto px-0">
                     <div className="flex flex-col md:flex-row items-start">
+                        <div className="w-full md:w-1/2 absolute right-[510px] top-[200px] z-50">
+                            <Image
+                                src="coffee-doodle.svg"
+                                alt="Decorative illustration"
+                                width={400}
+                                height={400}
+                                className="object-cover rounded-lg"
+                            />
+                        </div>
                         <div className="w-full z-10">
                             <BlurFade delay={BLUR_FADE_DELAY * 3}>
                                 <h2 className="text-xl font-bold mb-2">
@@ -61,7 +71,7 @@ export default function Page() {
                                         "#EE66A6",
                                         "#FFEB55",
                                     ]}
-                                    className="rounded-xl shadow-xl p-5"
+                                    className="rounded-xl shadow-xl p-5 z-10"
                                 >
                                     <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground bg-white dark:prose-invert">
                                         {DATA.summary}
@@ -130,7 +140,7 @@ export default function Page() {
                 </div>
             </section>
             <section id="skills">
-                <div className="flex min-h-0 flex-col gap-y-3">
+                <div className="flex min-h-0 flex-col gap-y-3 items-center justify-center">
                     <BlurFade delay={BLUR_FADE_DELAY * 9}>
                         <h2 className="text-xl font-bold">Skills</h2>
                     </BlurFade>
@@ -143,6 +153,9 @@ export default function Page() {
                                 <Badge key={skill}>{skill}</Badge>
                             </BlurFade>
                         ))}
+                    </div>
+                    <div className="flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8">
+                        <IconCloud iconSlugs={DATA.iconCloud} />
                     </div>
                 </div>
             </section>
