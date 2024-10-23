@@ -73,7 +73,7 @@ export default function Page() {
                                     ]}
                                     className="rounded-xl shadow-xl p-5 z-10"
                                 >
-                                    <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground bg-white dark:prose-invert">
+                                    <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground bg-white dark:bg-black dark:prose-invert">
                                         {DATA.summary}
                                     </Markdown>
                                 </ShineBorder>
