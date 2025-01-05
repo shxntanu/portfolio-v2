@@ -1,5 +1,10 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon, BookUserIcon } from "lucide-react";
+import {
+    HomeIcon,
+    NotebookIcon,
+    BookUserIcon,
+    TerminalIcon,
+} from "lucide-react";
 
 export const DATA = {
     name: "Shantanu Wable",
@@ -59,7 +64,11 @@ export const DATA = {
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
         { href: "/blog", icon: NotebookIcon, label: "Blog" },
-        {href: "https://terminal.shxntanu.tech", icon: Terminal, label: "Terminal"},
+        {
+            href: "https://terminal.shxntanu.tech",
+            icon: TerminalIcon,
+            label: "Terminal",
+        },
         { href: "/resume.pdf", icon: BookUserIcon, label: "Resume" },
     ],
     contact: {
