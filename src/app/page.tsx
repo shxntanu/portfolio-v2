@@ -213,10 +213,11 @@ export default function Page() {
                                     I like building things
                                 </h2>
                                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                    I have a knack for competing in hackathons.
-                                    Its always eye-opening to see the endless
-                                    possibilities brought to life by a group of
-                                    motivated and passionate individuals.
+                                    I have a knack for competing in hackathons
+                                    and project competitions. Its always
+                                    eye-opening to see the endless possibilities
+                                    brought to life by a group of motivated and
+                                    passionate individuals.
                                 </p>
                             </div>
                         </div>
@@ -230,6 +231,8 @@ export default function Page() {
                                 >
                                     <HackathonCard
                                         title={project.title}
+                                        position={project.position ?? ""}
+                                        type={project.type}
                                         description={project.description}
                                         location={project.location}
                                         dates={project.dates}

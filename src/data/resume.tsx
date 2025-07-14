@@ -15,7 +15,7 @@ export const DATA = {
     description:
         "21 year old Full Stack Developer, occasional Graphic Designer, Systems Programming Enthusiast and also an Engineering Student.",
     summary:
-        "I like to say that I am a full-stack developer, but I have most experience with frontend development using **React**. I also have experience in development with a wide variety of frameworks like **NextJS**, **Django**, **Angular**, **Spring**, **Flask**, and **Express**. I'm a versatile programmer and can pick up and learn any framework in a short span of time. I have an interest in low-level programming and like to read in-depth about **computers** and **networking** in my free time.\n\nI'm also proficient in languages like **C, C++, Java, Python and JavaScript / TypeScript** and have got a 2-star rating on Codechef (Max. 1509). I am currently learning low level programming using C. \n\n I also have a knack for competing in Hackathons, having stood **1st** 🥇 in **COEP Mindspark '23**, **3rd 🥉** in **Barclays Hack-O-Hire 2024** (and Winner from the Barclays Pune Campus) and **finalist** in **PICT's TechFiesta '24**. ",
+        "I like to say that I am a full-stack developer, but I have most experience with frontend development using **React**. I also have experience in development with a wide variety of frameworks like **NextJS**, **Django**, **Angular**, **Spring**, **Flask**, and **Express**. I'm a versatile programmer and can pick up and learn any framework in a short span of time. I have an interest in low-level programming and like to read in-depth about **computers** and **networking** in my free time.\n\nI'm also proficient in languages like **C, C++, Java, Python and JavaScript / TypeScript** and have got a 2-star rating on Codechef (Max. 1509). I am currently learning low level programming using C. \n\n I also have a knack for competing in Hackathons, having stood **1st** 🥇 in **COEP Mindspark '23**, **2nd** 🥇 in **Codecraft 2025**, **3rd 🥉** in **Barclays Hack-O-Hire 2024** (and Winner from the Barclays Pune Campus) and **finalist** in **PICT's TechFiesta '24**. ",
     avatarUrl: "/me.png",
     skills: [
         "React",
@@ -113,6 +113,28 @@ export const DATA = {
     },
 
     work: [
+        {
+            company: "Arista Networks",
+            href: "https://arista.com",
+            badges: [],
+            location: "Pune",
+            title: "Software Engineer",
+            logoUrl: "/arista.png",
+            start: "July 2025",
+            end: "Present",
+            description: "",
+        },
+        {
+            company: "Arista Networks",
+            href: "https://arista.com",
+            badges: [],
+            location: "Pune",
+            title: "Software Engineer Intern",
+            logoUrl: "/arista.png",
+            start: "Jan 2025",
+            end: "June 2025",
+            description: "",
+        },
         {
             company: "Arista Networks",
             href: "https://arista.com",
@@ -388,7 +410,9 @@ export const DATA = {
     hackathons: [
         {
             title: "Barclays Hack-O-Hire",
+            type: "",
             dates: "April 7 - 8th, 2024",
+            position: "3rd Prize 🥉",
             location: "Barclays Pune Campus, Pune",
             description:
                 "Developed a robust email classification system capable of classifying and routing emails in an organizational heirarchy tree with scale. \n\n Bagged 🥉 3rd Place overall and Winner from the Barclays Pune Campus from a total of 4500+ participants and 1200+ teams. Also got the opportunity to present the solution in front of the global leadership of Barclays including the CIO and CTO of Barclays International.",
@@ -396,8 +420,54 @@ export const DATA = {
             links: [],
         },
         {
+            title: "Impetus and Concepts 2025",
+            type: "Project Competition",
+            dates: "March 2025",
+            position: "1st Prize 🥇",
+            location: "PICT, Pune",
+            description:
+                "Developed an end-to-end system for identifying images from the source of capture in order to tackle the problem of deepfakes. This system provides a proactive approach to the problem of image provenance by the use of the Secure Enclave on Apple devices and various steganographic techniques to embed information in the pixel data of the image which is resilient to compression during transmit when sharing the media via social media and other platforms.",
+            image: "/inc.png",
+            links: [],
+        },
+        {
+            title: "Nexus 2.0",
+            type: "Project Competition",
+            dates: "April 2025",
+            position: "1st Prize 🥇",
+            location: "Army Institute of Technology, Pune",
+            description:
+                "Developed an end-to-end system for identifying images from the source of capture in order to tackle the problem of deepfakes. This system provides a proactive approach to the problem of image provenance by the use of the Secure Enclave on Apple devices and various steganographic techniques to embed information in the pixel data of the image which is resilient to compression during transmit when sharing the media via social media and other platforms.",
+            image: "/ait.png",
+            links: [],
+        },
+        {
+            title: "TATA Power SIA Hackathon 2023",
+            type: "",
+            dates: "28th October, 2023",
+            location: "COEP Pune",
+            position: "1st Prize 🥇",
+            description:
+                "Developed a highly configurable API for processing energy solutions data to generate deep-insights on strategy, decision making and growth opportunities. \n\n Bagged 🥇 1st Place overall.",
+            image: "/tatapower.png",
+            links: [],
+        },
+        {
+            title: "Codecraft 2025",
+            type: "",
+            dates: "January 2025",
+            position: "2nd Prize 🥈",
+            location: "Apptware, Pune",
+            description:
+                "Developed a comprehensive lead generation platform that automatically scrapes data from LinkedIn and other sources.",
+            image: "/apptware.png",
+            links: [],
+        },
+        {
             title: "BMC Hackathon",
+            type: "",
             dates: "September 28 - 30th, 2024",
+            position: "",
             location: "PICT, Pune",
             description:
                 "Creating compliance content is a very time consuming process due to the sheer length of the compliance documents and standards. We built a project that aimed at reducing the amount of manual work involved and makes creating audit and remediation scripts faster and easier.",
@@ -406,7 +476,9 @@ export const DATA = {
         },
         {
             title: "Smart India Hackathon 2024",
+            type: "",
             dates: "August 2024",
+            position: "",
             location: "",
             description:
                 "Architected a comprehensive interview platform for DRDO to conduct interviews for various roles. The platform included features like live coding, video conferencing, and a robust backend for managing the interviews.",
@@ -415,7 +487,9 @@ export const DATA = {
         },
         {
             title: "TechFiesta 2024",
+            type: "",
             dates: "March 31st, 2024",
+            position: "",
             location: "PICT, Pune",
             description:
                 "Developed a solar energy awareness and onboarding platform for farmers using data from web scraping.",
@@ -423,17 +497,10 @@ export const DATA = {
             links: [],
         },
         {
-            title: "TATA Power SIA Hackathon 2023",
-            dates: "28th October, 2023",
-            location: "COEP Pune",
-            description:
-                "Developed a highly configurable API for processing energy solutions data to generate deep-insights on strategy, decision making and growth opportunities. \n\n Bagged 🥇 1st Place overall.",
-            image: "/tatapower.png",
-            links: [],
-        },
-        {
             title: "Smart India Hackathon 2023",
+            type: "",
             dates: "September 2023",
+            position: "",
             location: "Remote",
             description:
                 "Developed a complete Know-Your-Rights platform for the public with a custom trained LLM model for legal queries and library of legal documents for ease of access.",
