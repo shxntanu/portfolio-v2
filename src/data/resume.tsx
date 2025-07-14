@@ -13,7 +13,7 @@ export const DATA = {
     location: "Pune, Maharashtra",
     locationLink: "https://www.google.com/maps/place/pune",
     description:
-        "21 year old Full Stack Developer, occasional Graphic Designer, Systems Programming Enthusiast and also an Engineering Student.",
+        "22 year old Full Stack Developer, occasional Graphic Designer, Systems Programming Enthusiast and also a Software Engineer.",
     summary:
         "I like to say that I am a full-stack developer, but I have most experience with frontend development using **React**. I also have experience in development with a wide variety of frameworks like **NextJS**, **Django**, **Angular**, **Spring**, **Flask**, and **Express**. I'm a versatile programmer and can pick up and learn any framework in a short span of time. I have an interest in low-level programming and like to read in-depth about **computers** and **networking** in my free time.\n\nI'm also proficient in languages like **C, C++, Java, Python and JavaScript / TypeScript** and have got a 2-star rating on Codechef (Max. 1509). I am currently learning low level programming using C. \n\n I also have a knack for competing in Hackathons, having stood **1st** 🥇 in **COEP Mindspark '23**, **2nd** 🥇 in **Codecraft 2025**, **3rd 🥉** in **Barclays Hack-O-Hire 2024** (and Winner from the Barclays Pune Campus) and **finalist** in **PICT's TechFiesta '24**. ",
     avatarUrl: "/me.png",
@@ -409,14 +409,14 @@ export const DATA = {
     ],
     hackathons: [
         {
-            title: "Barclays Hack-O-Hire",
-            type: "",
-            dates: "April 7 - 8th, 2024",
-            position: "3rd Prize 🥉",
-            location: "Barclays Pune Campus, Pune",
+            title: "Nexus 2.0",
+            type: "Project Competition",
+            dates: "April 2025",
+            position: "1st Prize 🥇",
+            location: "Army Institute of Technology, Pune",
             description:
-                "Developed a robust email classification system capable of classifying and routing emails in an organizational heirarchy tree with scale. \n\n Bagged 🥉 3rd Place overall and Winner from the Barclays Pune Campus from a total of 4500+ participants and 1200+ teams. Also got the opportunity to present the solution in front of the global leadership of Barclays including the CIO and CTO of Barclays International.",
-            image: "/barclays.png",
+                "Developed an end-to-end system for identifying images from the source of capture in order to tackle the problem of deepfakes. This system provides a proactive approach to the problem of image provenance by the use of the Secure Enclave on Apple devices and various steganographic techniques to embed information in the pixel data of the image which is resilient to compression during transmit when sharing the media via social media and other platforms.",
+            image: "/ait.png",
             links: [],
         },
         {
@@ -428,17 +428,6 @@ export const DATA = {
             description:
                 "Developed an end-to-end system for identifying images from the source of capture in order to tackle the problem of deepfakes. This system provides a proactive approach to the problem of image provenance by the use of the Secure Enclave on Apple devices and various steganographic techniques to embed information in the pixel data of the image which is resilient to compression during transmit when sharing the media via social media and other platforms.",
             image: "/inc.png",
-            links: [],
-        },
-        {
-            title: "Nexus 2.0",
-            type: "Project Competition",
-            dates: "April 2025",
-            position: "1st Prize 🥇",
-            location: "Army Institute of Technology, Pune",
-            description:
-                "Developed an end-to-end system for identifying images from the source of capture in order to tackle the problem of deepfakes. This system provides a proactive approach to the problem of image provenance by the use of the Secure Enclave on Apple devices and various steganographic techniques to embed information in the pixel data of the image which is resilient to compression during transmit when sharing the media via social media and other platforms.",
-            image: "/ait.png",
             links: [],
         },
         {
@@ -461,6 +450,17 @@ export const DATA = {
             description:
                 "Developed a comprehensive lead generation platform that automatically scrapes data from LinkedIn and other sources.",
             image: "/apptware.png",
+            links: [],
+        },
+        {
+            title: "Barclays Hack-O-Hire",
+            type: "",
+            dates: "April 7 - 8th, 2024",
+            position: "3rd Prize 🥉",
+            location: "Barclays Pune Campus, Pune",
+            description:
+                "Developed a robust email classification system capable of classifying and routing emails in an organizational heirarchy tree with scale. \n\n Bagged 🥉 3rd Place overall and Winner from the Barclays Pune Campus from a total of 4500+ participants and 1200+ teams. Also got the opportunity to present the solution in front of the global leadership of Barclays including the CIO and CTO of Barclays International.",
+            image: "/barclays.png",
             links: [],
         },
         {
