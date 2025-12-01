@@ -181,6 +181,29 @@ export const DATA = {
     ],
     projects: [
         {
+            title: "Lesa",
+            href: "https://github.com/shxntanu/lesa",
+            dates: "Nov. 2024",
+            active: true,
+            description:
+                "CLI tool built in Python that allows you to converse with your documents from the terminal, completely offline and on-device using Ollama.",
+            technologies: [
+                "Python",
+                "Ollama",
+                "LangChain",
+                "FAISS"
+            ],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/shxntanu/lesa",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/lesa.png",
+            video: "",
+        },
+        {
             title: "PageTalk",
             href: "https://github.com/shxntanu/pagetalk",
             dates: "Sept. 2023 - Dec. 2023",
@@ -433,7 +456,7 @@ export const DATA = {
         {
             title: "Nexus 2.0",
             type: "Project Competition",
-            dates: "April 2025",
+            dates: "April 7th, 2025",
             position: "1st Prize 🥇",
             location: "Army Institute of Technology, Pune",
             description:
@@ -453,17 +476,6 @@ export const DATA = {
             links: [],
         },
         {
-            title: "TATA Power SIA Hackathon 2023",
-            type: "",
-            dates: "28th October, 2023",
-            location: "COEP Pune",
-            position: "1st Prize 🥇",
-            description:
-                "Developed a highly configurable API for processing energy solutions data to generate deep-insights on strategy, decision making and growth opportunities. \n\n Bagged 🥇 1st Place overall.",
-            image: "/tatapower.png",
-            links: [],
-        },
-        {
             title: "Codecraft 2025",
             type: "",
             dates: "January 2025",
@@ -472,6 +484,28 @@ export const DATA = {
             description:
                 "Developed a comprehensive lead generation platform that automatically scrapes data from LinkedIn and other sources.",
             image: "/apptware.png",
+            links: [],
+        },
+                {
+            title: "BMC Hackathon",
+            type: "",
+            dates: "September 28 - 30th, 2024",
+            position: "",
+            location: "PICT, Pune",
+            description:
+                "Creating compliance content is a very time consuming process due to the sheer length of the compliance documents and standards. We built a project that aimed at reducing the amount of manual work involved and makes creating audit and remediation scripts faster and easier.",
+            image: "/bmc.png",
+            links: [],
+        },
+                {
+            title: "Smart India Hackathon 2024",
+            type: "",
+            dates: "August 2024",
+            position: "",
+            location: "",
+            description:
+                "Architected a comprehensive interview platform for DRDO to conduct interviews for various roles. The platform included features like live coding, video conferencing, and a robust backend for managing the interviews.",
+            image: "/sih.png",
             links: [],
         },
         {
@@ -485,29 +519,7 @@ export const DATA = {
             image: "/barclays.png",
             links: [],
         },
-        {
-            title: "BMC Hackathon",
-            type: "",
-            dates: "September 28 - 30th, 2024",
-            position: "",
-            location: "PICT, Pune",
-            description:
-                "Creating compliance content is a very time consuming process due to the sheer length of the compliance documents and standards. We built a project that aimed at reducing the amount of manual work involved and makes creating audit and remediation scripts faster and easier.",
-            image: "/bmc.png",
-            links: [],
-        },
-        {
-            title: "Smart India Hackathon 2024",
-            type: "",
-            dates: "August 2024",
-            position: "",
-            location: "",
-            description:
-                "Architected a comprehensive interview platform for DRDO to conduct interviews for various roles. The platform included features like live coding, video conferencing, and a robust backend for managing the interviews.",
-            image: "/sih.png",
-            links: [],
-        },
-        {
+                {
             title: "TechFiesta 2024",
             type: "",
             dates: "March 31st, 2024",
@@ -516,6 +528,17 @@ export const DATA = {
             description:
                 "Developed a solar energy awareness and onboarding platform for farmers using data from web scraping.",
             image: "/pict.jpg",
+            links: [],
+        },
+        {
+            title: "TATA Power SIA Hackathon 2023",
+            type: "",
+            dates: "October 28th, 2023",
+            location: "COEP Pune",
+            position: "1st Prize 🥇",
+            description:
+                "Developed a highly configurable API for processing energy solutions data to generate deep-insights on strategy, decision making and growth opportunities. \n\n Bagged 🥇 1st Place overall.",
+            image: "/tatapower.png",
             links: [],
         },
         {
